@@ -72,7 +72,7 @@ function Bundle(envType, debugType) {
             }],
             ["envify", {
                 NODE_ENV: envType,
-                'global': true,
+                'global': debugType,
                 '_': 'purge'
             }]
         ],
@@ -80,7 +80,7 @@ function Bundle(envType, debugType) {
         debug: debugType,
         cache: {},
         packageCache: {},
-        fullPaths: true
+        fullPaths: false
     });
     return Bundler
         .bundle()
