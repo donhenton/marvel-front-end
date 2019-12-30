@@ -112,10 +112,17 @@ gulp.task('react-prod', function() {
 
 
 
+gulp.task('simple', function(cb) {
+    browserSync.init({
+        server: "./public_html",
+        port: 6060,
+        ui: {
+            port: 6061
+        }
+    });
 
 
-
-
+});
 
 
 gulp.task('frontend-serve', function(cb) {
@@ -164,4 +171,4 @@ gulp.task('frontend-serve', function(cb) {
 
 gulp.task('release', ['sass-dev', 'react-prod']); // run as gulp release --production=true for compression
 gulp.task('default', ['sass-dev', 'react-build', 'frontend-serve']);
-/* end fronend task ---------------------------------------- */
+/* end frontend task ---------------------------------------- */
