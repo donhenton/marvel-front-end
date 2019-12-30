@@ -1,0 +1,110 @@
+.character-scroller
+{
+    width: 33%;
+    .scroller-explain
+    {
+        background-color: $comic-book-blue;
+        color: $comic-off-white;
+        font-size: ms(0);
+        font-family: graphikregularitalic;
+        text-align: center;
+        padding: 1rem;
+ 
+    }
+    
+    background: $comic-off-white;
+    float: left;
+    .loader-area
+    {
+
+        border: thin solid $comic-dark-blue;
+        text-align: center;
+        padding-top: 1rem;
+        img
+        {
+            height:auto;
+            max-width: 95%;
+             
+        }
+        span
+        {
+            margin-bottom: .5rem;
+        }
+        
+    }
+    .scroller-container
+    {
+        border: thin solid $comic-dark-blue;
+        position: relative;
+
+        .infinite-scroll
+        {
+            height: 75%;
+            width:99%;
+            overflow-y: auto;
+            overflow-x:hidden;
+            
+              @include forLargeHeight($break-640) {
+
+                 height: 81%;
+            }
+
+        }
+
+        .scroll-item
+        {
+            
+          
+            
+            background-color:$comic-dark-blue;
+            cursor: pointer;
+            width:100%;
+            display:flex;
+            flex-direction: column;
+            flex-wrap:wrap;
+            margin: 1rem;
+            padding: 1rem;
+            color: $comic-off-white;
+
+            &.highlight
+            {
+               color: $orange-highlight;
+               img
+               {
+                   border: 2px solid $orange-highlight;
+               }
+            }
+            
+            img
+            { 
+              //   vertical-align: top;
+              max-width:95%;
+              
+            }
+            .character-name
+            {
+              padding-bottom: 5%;
+              border-bottom: $comic-off-white;
+            }
+            .character-image
+            {
+                 
+            }
+            .flex-item
+            {
+                display:block;
+                width:100%;
+                
+                text-align: center;
+                
+            }
+        }
+
+
+    }
+
+
+}
+
+
+

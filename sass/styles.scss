@@ -1,0 +1,23 @@
+$comic-book-blue: #86aede;
+$comic-off-white: rgb(242, 246, 251);
+$orange-highlight: rgb(245, 175, 102);
+$comic-dark-blue: rgb(70, 116, 172);
+$break-640: 635;
+$fred: #333333;
+@import "components/_reset.scss";
+@import "components/_mixins.scss";
+@import "components/_modularscale.scss"; //this is derived from github http://www.modularscale.com/?16,1280,16.842374276836924&px&1.618
+@import "components/_typography.scss";
+@import "components/_hamburger-menu.scss";
+@import "components/_blocks.scss";
+@import "components/_utilities.scss";
+@import "components/pages/character/charactersPage.scss";
+@import "components/pages/character/characterPanel.scss";
+@import "components/pages/character/characterDetail.scss";
+@import "components/pages/character/comicPanel.scss";
+@import "components/pages/character/detailImageModal.scss";
+@import "components/pages/character/characterImageModal.scss";
+@import "components/pages/stories/storiesPage.scss";
+@import "components/pages/stories/characterScroller.scss";
+@import "components/pages/stories/storyDisplay.scss";
+@import "components/pages/stories/storyItem.scss";

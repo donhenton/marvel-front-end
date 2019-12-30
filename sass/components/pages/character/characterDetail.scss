@@ -1,0 +1,112 @@
+.character-detail
+{
+    position: absolute;
+    color: $comic-off-white;
+    background-color: rgba(0,0,0,.5);
+    //padding: 3rem;
+    width:100%;
+    min-width: 100%;
+    max-width: 100%;
+    
+    &.no-data
+    {
+        height:100%;
+    }
+
+    top:0;
+    left:0;
+
+
+    .return-button
+    {
+        font-size: 4rem;
+        margin: 1.5rem;
+        cursor: pointer;
+
+    }
+
+    .title-area
+    {
+        min-height: 9rem;
+        height: 9rem;
+        max-height: 9rem;
+        width: 100%;
+        border-bottom: .5rem double $comic-off-white;
+        padding: 0.5rem;
+        background-color: black;
+        display:flex;
+        
+
+        @include forLargeScreens($break-640) {
+            padding: 1rem;
+
+        }
+
+        img
+        {
+
+             
+            vertical-align: middle;
+        }
+        .character-name
+        {
+
+            margin-left: 2rem;
+            font-size: 1.5rem;
+            @include forLargeScreens(520) {
+                font-size: 2.5rem;
+
+            }
+
+
+
+        }
+        //margin-top:  .5rem;
+        // margin-bottom: 1.5rem;
+        vertical-align: middle;
+    }
+
+    .comic-scroll-container
+    { 
+        //overflow-x: hidden;
+        // overflow-y: scroll;
+
+        .comic-display
+        {
+
+
+            .no-data-container
+            { 
+                margin: 5% auto;
+                .no-data-text
+                {
+
+                  
+
+                }
+            }
+
+
+            align-items:flex-start; 
+            justify-content: center;
+            width:100%;
+            //margin-top: .5rem;
+
+            display: flex;
+
+
+            flex-direction: column;
+            @include forLargeScreens(500) {
+
+
+                position:relative;
+                flex-flow: row wrap;
+
+            }
+
+        }
+    }
+
+}
+
+

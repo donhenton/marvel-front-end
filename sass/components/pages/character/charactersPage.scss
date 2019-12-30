@@ -1,0 +1,89 @@
+.characters-page
+{ 
+    font-size: ms(1);
+    .character-controls
+    { 
+        text-align: center;
+        height:15%;
+        vertical-align:  central;
+        .control-text
+        {
+            // padding-top: 4%;
+            display: inline;
+
+            position: absolute;
+            left: 50%;
+            top:1%;
+            width: 50rem;
+            height: 2rem;
+            margin: -1rem 0 0 -25rem;  
+            .control-text-line
+            {
+                display: inline-table;
+                font-size: ms(0);
+                @include forLargeScreens($break-640) {
+
+                    font-size: ms(1)
+                    
+
+                }
+
+
+
+
+            }
+
+        }
+
+
+        //height: 5%;
+        position: relative;
+        //  border: thin solid red;
+        .control-box
+        {
+            //height: 2.5rem;
+            padding: .55rem;
+            color: $comic-off-white;
+            background-color:  $comic-book-blue;
+            font-size: 3.5rem;
+            border-radius: 15%;
+            cursor: pointer;
+            display: inline-table;
+
+        }
+        .control-left
+        {
+            float: left;
+            margin-left: 1rem;
+
+        }
+        .control-right
+        {
+            float: right;
+            margin-right: 1rem;
+
+        }
+    }
+
+    .flex-container
+    {
+
+        align-items: center;  
+        justify-content:center;
+        width:100%;
+        display: flex;
+
+        flex-direction: column;
+        @include forLargeScreens($break-640) {
+
+
+            position:relative;
+            flex-flow: row wrap;
+            align-items: flex-start;
+
+        }
+
+    }
+
+
+}

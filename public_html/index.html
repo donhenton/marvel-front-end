@@ -1,0 +1,76 @@
+<html>
+
+<head>
+    <title>
+        Marvel API on AWS
+    </title>
+    <link href="css/foundation-icons.css" rel="stylesheet" type="text/css" />
+    <link href="built/css/style.css" rel="stylesheet" type="text/css" />
+    <script src="js/libs/jquery.min.js" type="text/javascript"></script>
+    <script src="js/libs/lodash.min.js" type="text/javascript"></script>
+    <script src="js/libs/postal.min.js" type="text/javascript"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ,
+             minimum-scale=1.0 , maximum-scale=1.0" />
+    <script type="text/javascript">
+        window.marvelBaseURL = 'http://' + location.hostname + ":" + location.port + '/api/';
+    </script>
+</head>
+
+
+
+
+
+
+
+<body class="body-container">
+
+    <!-- Hamburger icon -->
+    <label for="nav-trigger" class="label-trigger"><span>Menu</span></label>
+    <!-- Navigation -->
+
+    <!-- Main container -->
+    <main class="main-container">
+        <header class='grouping'>
+
+            <nav class='header-item'>
+                <ul class="menu">
+                    <li><a href="#" id="Home">Home</a></li>
+                    <li><a href="#" id="Stories">Stories</a></li>
+                    <li><a href="#" id="Characters">Characters</a></li>
+                    <li><a href="#" id="SourceCode">Source Code</a></li>
+                </ul>
+            </nav>
+
+
+
+            <span class='header-item' id='view-report'>
+                    <span id='view-size'></span>
+            <span id='view-portrait'>portrait</span>
+            <span id='view-landscape'>landscape</span>
+            </span>
+            <span class='header-item header-title'>Marvel API</span>
+        </header>
+
+        <div class='main-content'>
+
+            <div id='reactContainer'></div>
+
+        </div>
+
+
+
+        <footer>
+
+            <div class='item-banner'><a target="_blank" href="http://marvel.com">Data provided by Marvel. © 2019 MARVEL</a></div>
+        </footer>
+    </main>
+
+    <script src="js/hamburger-code.js" type="text/javascript"></script>
+
+    <script src="built/js/bundle.js" type="text/javascript"></script>
+</body>
+
+
+
+
+</html>

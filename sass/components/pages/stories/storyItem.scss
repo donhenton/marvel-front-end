@@ -1,0 +1,54 @@
+.story-item
+{
+
+    margin: 2% 0;
+    border: thin solid $comic-dark-blue;
+    padding: 1.5%;
+    
+    .indent
+    {
+        margin-left: 5%;
+    }
+
+    .story-title
+    {
+        font-size: ms(2);
+
+    }
+    .sub-head
+    {
+        font-family: graphikregularitalic;
+        font-size: ms(1);
+        margin: 1rem 0;
+    }
+
+    .creator-list
+    {
+        font-size: ms(0);
+        text-transform: capitalize;
+        .role
+        {
+            width: 12rem;
+            display: inline-table;
+            white-space: pre-wrap;
+
+
+        }
+        .name
+        {
+            width: 12rem;
+
+            display: inline-table;
+            margin-left: 12%;
+            @include forLargeScreens($break-640) {
+                margin-left: 8%;
+            }
+
+        }
+        .creator-list-item
+        {
+            padding: .5rem 0;
+            border-bottom: thin solid $comic-dark-blue;
+        }
+    }
+}

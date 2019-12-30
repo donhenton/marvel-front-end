@@ -1,0 +1,73 @@
+.comic-panel
+{
+    text-align: center;
+    background-color: black;
+    padding: 0.5rem;
+    width:98%;
+    margin: 1%;
+   @include forLargeScreens(500) {
+
+
+
+        max-width: 44%;
+        min-width: 44%;
+        // height: 27.5rem;
+    }
+
+    .comic-image
+    {
+        width:100%;
+        max-width: 100%;
+        //  border: thin solid red;
+        a {
+            text-decoration: none;
+            color: $comic-off-white;
+            &:link
+                {
+                color: $comic-off-white;
+            }
+            &:visited
+                {
+                color: $comic-off-white;
+            }
+            &:hover
+                {
+                color: $orange-highlight;
+
+
+            }
+
+        }
+    }
+
+    .comic-title
+    {
+        margin: 1rem  auto;
+    }
+
+    img
+    {
+
+        @include forLargeScreens($break-640) {
+
+
+            //  width:30%;
+        }
+    }
+
+ 
+
+    .comic-info
+    {
+        .comic-price
+        {
+            float: left;
+            margin-left: 5%;
+        }
+        .comic-date
+        {
+            float: right;
+            margin-right: 5%;
+        }
+    }
+}
