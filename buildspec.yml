@@ -21,4 +21,4 @@ artifacts:
     files:
         - '**/*'
     base-directory: 'public_html*'
-    discard-paths: yes
+    discard-paths: no
