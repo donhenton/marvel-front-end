@@ -6,7 +6,7 @@ phases:
     runtime-versions:
       docker: 18
     commands:
-      - echo installng docker phase ...........
+      - echo installing ...........
       - mkdir /root/.npm-global
       - export PATH=/root/.npm-global/bin:$PATH
       - export NPM_CONFIG_PREFIX=/root/.npm-global
