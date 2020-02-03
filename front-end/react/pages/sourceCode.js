@@ -15,7 +15,7 @@ export default class SourceCodePage extends Component {
 
         return ( <div className = 'source-code-page'>
             <h2>Source Code For this Project</h2>  
-            <p style="height:5px"></p>
+            <p style={{height: 5+'px'}}></p>
             <blockquote>
             <h3>Front End Code</h3>  
             <p> Located at <a target = "_blank"  href = "https://github.com/donhenton/marvel-front-end"> Marvel Server Front End Github Project </a></p>
